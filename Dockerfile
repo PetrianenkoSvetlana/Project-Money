@@ -35,5 +35,5 @@ WORKDIR /ProjectMoney/yolov5/
 CMD python3 train.py --img 640 --batch 8 --epochs 50 --data ../data.yaml --weights ../yolov5s.pt --workers 0 --device cpu 
 
 
-#"doker build tag(name) -t .
-#doker run tag(name) -v локальный путь:виртуальный путь -v локальный путь рзультата:../runs/ -it name/tag " - терминал
+#doker build money -t .
+#doker run money -v ./ProjectMoney/train:./ProjectMoney/train -v ./ProjectMoney/results:/./ProjectMoney/results -it money
